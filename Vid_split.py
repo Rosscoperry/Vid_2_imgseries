@@ -8,7 +8,7 @@ vidcap = cv2.VideoCapture('755_759.avi')
 success,image = vidcap.read()
 count = 0
 while success:
-  cv2.imwrite("frame%d.bmp" % count, image)     # save frame as BMP file      
+  cv2.imwrite("frame%d.bmp" % count, image)     # save frame as BMP file
   success,image = vidcap.read()
   print('Read a new frame: ', success)
   count += 1

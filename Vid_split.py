@@ -4,7 +4,8 @@ Created on Mon Jan 11 21:45:51 2020
 """
 
 import cv2
-vidcap = cv2.VideoCapture('755_759.avi')
+filename = '' #enter the video filename here -check destination
+vidcap = cv2.VideoCapture(filename)
 success,image = vidcap.read()
 count = 0
 while success:
